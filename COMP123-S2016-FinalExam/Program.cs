@@ -4,6 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+//  Programming-2
+//  Gurkirat Singh Khaira
+//  #301112565
+//  Final exam
+//
+//
 namespace COMP123_M2020_FinalExam
 {
     public static class Program
