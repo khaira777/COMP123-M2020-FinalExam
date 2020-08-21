@@ -182,5 +182,11 @@ namespace COMP123_M2020_FinalExam
             // Step 5 - Show the next form
             raceAndClassForm.Show();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.generatenameform.Show();
+        }
     }
 }

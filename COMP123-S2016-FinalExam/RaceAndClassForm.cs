@@ -38,8 +38,8 @@ namespace COMP123_M2020_FinalExam
         private void RaceRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton selectedRace = (RadioButton)sender;
-
             this._selectedRace = selectedRace.Text;
+            Program.character.Race = this._selectedRace;
         }
 
         private void NextButton_Click(object sender, EventArgs e)

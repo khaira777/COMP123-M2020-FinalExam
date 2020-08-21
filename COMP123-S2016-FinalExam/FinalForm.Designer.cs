@@ -53,21 +53,22 @@
             this.LastNameLabel2 = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
             this.FirstNameLabel2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RaceTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(504, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(672, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,18 +78,18 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(113, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -98,27 +99,28 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(113, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(139, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // BackButton
             // 
             this.BackButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.Location = new System.Drawing.Point(12, 429);
+            this.BackButton.Location = new System.Drawing.Point(16, 528);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(113, 40);
+            this.BackButton.Size = new System.Drawing.Size(151, 49);
             this.BackButton.TabIndex = 5;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -127,9 +129,10 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(379, 429);
+            this.ExitButton.Location = new System.Drawing.Point(505, 528);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(4);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(113, 40);
+            this.ExitButton.Size = new System.Drawing.Size(151, 49);
             this.ExitButton.TabIndex = 6;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -150,9 +153,11 @@
             this.AbilityGroupBox.Controls.Add(this.StrengthTextBox);
             this.AbilityGroupBox.Controls.Add(this.StrengthLabel);
             this.AbilityGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbilityGroupBox.Location = new System.Drawing.Point(12, 27);
+            this.AbilityGroupBox.Location = new System.Drawing.Point(16, 33);
+            this.AbilityGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.AbilityGroupBox.Name = "AbilityGroupBox";
-            this.AbilityGroupBox.Size = new System.Drawing.Size(146, 396);
+            this.AbilityGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.AbilityGroupBox.Size = new System.Drawing.Size(195, 487);
             this.AbilityGroupBox.TabIndex = 7;
             this.AbilityGroupBox.TabStop = false;
             this.AbilityGroupBox.Text = "Abilities";
@@ -160,10 +165,11 @@
             // CharismaTextBox
             // 
             this.CharismaTextBox.BackColor = System.Drawing.Color.White;
-            this.CharismaTextBox.Location = new System.Drawing.Point(7, 361);
+            this.CharismaTextBox.Location = new System.Drawing.Point(9, 444);
+            this.CharismaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CharismaTextBox.Name = "CharismaTextBox";
             this.CharismaTextBox.ReadOnly = true;
-            this.CharismaTextBox.Size = new System.Drawing.Size(127, 26);
+            this.CharismaTextBox.Size = new System.Drawing.Size(168, 31);
             this.CharismaTextBox.TabIndex = 11;
             this.CharismaTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -171,19 +177,21 @@
             // 
             this.CharismaLabel.AutoSize = true;
             this.CharismaLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CharismaLabel.Location = new System.Drawing.Point(7, 335);
+            this.CharismaLabel.Location = new System.Drawing.Point(9, 412);
+            this.CharismaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CharismaLabel.Name = "CharismaLabel";
-            this.CharismaLabel.Size = new System.Drawing.Size(82, 18);
+            this.CharismaLabel.Size = new System.Drawing.Size(108, 23);
             this.CharismaLabel.TabIndex = 10;
             this.CharismaLabel.Text = "Charisma";
             // 
             // WisdomTextBox
             // 
             this.WisdomTextBox.BackColor = System.Drawing.Color.White;
-            this.WisdomTextBox.Location = new System.Drawing.Point(7, 301);
+            this.WisdomTextBox.Location = new System.Drawing.Point(9, 370);
+            this.WisdomTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.WisdomTextBox.Name = "WisdomTextBox";
             this.WisdomTextBox.ReadOnly = true;
-            this.WisdomTextBox.Size = new System.Drawing.Size(127, 26);
+            this.WisdomTextBox.Size = new System.Drawing.Size(168, 31);
             this.WisdomTextBox.TabIndex = 9;
             this.WisdomTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -191,19 +199,21 @@
             // 
             this.WisdomLabel.AutoSize = true;
             this.WisdomLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WisdomLabel.Location = new System.Drawing.Point(7, 275);
+            this.WisdomLabel.Location = new System.Drawing.Point(9, 338);
+            this.WisdomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WisdomLabel.Name = "WisdomLabel";
-            this.WisdomLabel.Size = new System.Drawing.Size(69, 18);
+            this.WisdomLabel.Size = new System.Drawing.Size(92, 23);
             this.WisdomLabel.TabIndex = 8;
             this.WisdomLabel.Text = "Wisdom";
             // 
             // IntelligenceTextBox
             // 
             this.IntelligenceTextBox.BackColor = System.Drawing.Color.White;
-            this.IntelligenceTextBox.Location = new System.Drawing.Point(7, 241);
+            this.IntelligenceTextBox.Location = new System.Drawing.Point(9, 297);
+            this.IntelligenceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IntelligenceTextBox.Name = "IntelligenceTextBox";
             this.IntelligenceTextBox.ReadOnly = true;
-            this.IntelligenceTextBox.Size = new System.Drawing.Size(127, 26);
+            this.IntelligenceTextBox.Size = new System.Drawing.Size(168, 31);
             this.IntelligenceTextBox.TabIndex = 7;
             this.IntelligenceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -211,19 +221,21 @@
             // 
             this.IntelligenceLabel.AutoSize = true;
             this.IntelligenceLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntelligenceLabel.Location = new System.Drawing.Point(7, 215);
+            this.IntelligenceLabel.Location = new System.Drawing.Point(9, 265);
+            this.IntelligenceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IntelligenceLabel.Name = "IntelligenceLabel";
-            this.IntelligenceLabel.Size = new System.Drawing.Size(102, 18);
+            this.IntelligenceLabel.Size = new System.Drawing.Size(136, 23);
             this.IntelligenceLabel.TabIndex = 6;
             this.IntelligenceLabel.Text = "Intelligence";
             // 
             // ConstitutionTextBox
             // 
             this.ConstitutionTextBox.BackColor = System.Drawing.Color.White;
-            this.ConstitutionTextBox.Location = new System.Drawing.Point(7, 181);
+            this.ConstitutionTextBox.Location = new System.Drawing.Point(9, 223);
+            this.ConstitutionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ConstitutionTextBox.Name = "ConstitutionTextBox";
             this.ConstitutionTextBox.ReadOnly = true;
-            this.ConstitutionTextBox.Size = new System.Drawing.Size(127, 26);
+            this.ConstitutionTextBox.Size = new System.Drawing.Size(168, 31);
             this.ConstitutionTextBox.TabIndex = 5;
             this.ConstitutionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -231,19 +243,21 @@
             // 
             this.ConstitutionLabel.AutoSize = true;
             this.ConstitutionLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConstitutionLabel.Location = new System.Drawing.Point(7, 155);
+            this.ConstitutionLabel.Location = new System.Drawing.Point(9, 191);
+            this.ConstitutionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConstitutionLabel.Name = "ConstitutionLabel";
-            this.ConstitutionLabel.Size = new System.Drawing.Size(109, 18);
+            this.ConstitutionLabel.Size = new System.Drawing.Size(144, 23);
             this.ConstitutionLabel.TabIndex = 4;
             this.ConstitutionLabel.Text = "Constitution";
             // 
             // DexterityTextBox
             // 
             this.DexterityTextBox.BackColor = System.Drawing.Color.White;
-            this.DexterityTextBox.Location = new System.Drawing.Point(7, 121);
+            this.DexterityTextBox.Location = new System.Drawing.Point(9, 149);
+            this.DexterityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DexterityTextBox.Name = "DexterityTextBox";
             this.DexterityTextBox.ReadOnly = true;
-            this.DexterityTextBox.Size = new System.Drawing.Size(127, 26);
+            this.DexterityTextBox.Size = new System.Drawing.Size(168, 31);
             this.DexterityTextBox.TabIndex = 3;
             this.DexterityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -251,19 +265,21 @@
             // 
             this.DexterityLabel.AutoSize = true;
             this.DexterityLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DexterityLabel.Location = new System.Drawing.Point(7, 95);
+            this.DexterityLabel.Location = new System.Drawing.Point(9, 117);
+            this.DexterityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DexterityLabel.Name = "DexterityLabel";
-            this.DexterityLabel.Size = new System.Drawing.Size(83, 18);
+            this.DexterityLabel.Size = new System.Drawing.Size(109, 23);
             this.DexterityLabel.TabIndex = 2;
             this.DexterityLabel.Text = "Dexterity";
             // 
             // StrengthTextBox
             // 
             this.StrengthTextBox.BackColor = System.Drawing.Color.White;
-            this.StrengthTextBox.Location = new System.Drawing.Point(7, 61);
+            this.StrengthTextBox.Location = new System.Drawing.Point(9, 75);
+            this.StrengthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.StrengthTextBox.Name = "StrengthTextBox";
             this.StrengthTextBox.ReadOnly = true;
-            this.StrengthTextBox.Size = new System.Drawing.Size(127, 26);
+            this.StrengthTextBox.Size = new System.Drawing.Size(168, 31);
             this.StrengthTextBox.TabIndex = 1;
             this.StrengthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -271,9 +287,10 @@
             // 
             this.StrengthLabel.AutoSize = true;
             this.StrengthLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StrengthLabel.Location = new System.Drawing.Point(7, 35);
+            this.StrengthLabel.Location = new System.Drawing.Point(9, 43);
+            this.StrengthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StrengthLabel.Name = "StrengthLabel";
-            this.StrengthLabel.Size = new System.Drawing.Size(78, 18);
+            this.StrengthLabel.Size = new System.Drawing.Size(103, 23);
             this.StrengthLabel.TabIndex = 0;
             this.StrengthLabel.Text = "Strength";
             // 
@@ -281,78 +298,86 @@
             // 
             this.LastNameLabel2.AutoSize = true;
             this.LastNameLabel2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameLabel2.Location = new System.Drawing.Point(340, 33);
+            this.LastNameLabel2.Location = new System.Drawing.Point(453, 41);
+            this.LastNameLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LastNameLabel2.Name = "LastNameLabel2";
-            this.LastNameLabel2.Size = new System.Drawing.Size(88, 18);
+            this.LastNameLabel2.Size = new System.Drawing.Size(112, 23);
             this.LastNameLabel2.TabIndex = 11;
             this.LastNameLabel2.Text = "Last Name";
             // 
             // LastNameTextBox
             // 
             this.LastNameTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameTextBox.Location = new System.Drawing.Point(340, 54);
+            this.LastNameTextBox.Location = new System.Drawing.Point(453, 66);
+            this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(152, 26);
+            this.LastNameTextBox.Size = new System.Drawing.Size(201, 31);
             this.LastNameTextBox.TabIndex = 10;
             // 
             // FirstNameLabel2
             // 
             this.FirstNameLabel2.AutoSize = true;
             this.FirstNameLabel2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameLabel2.Location = new System.Drawing.Point(168, 33);
+            this.FirstNameLabel2.Location = new System.Drawing.Point(224, 41);
+            this.FirstNameLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FirstNameLabel2.Name = "FirstNameLabel2";
-            this.FirstNameLabel2.Size = new System.Drawing.Size(89, 18);
+            this.FirstNameLabel2.Size = new System.Drawing.Size(115, 23);
             this.FirstNameLabel2.TabIndex = 9;
             this.FirstNameLabel2.Text = "First Name";
             // 
-            // textBox1
+            // FirstNameTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(168, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 26);
-            this.textBox1.TabIndex = 8;
+            this.FirstNameTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameTextBox.Location = new System.Drawing.Point(224, 66);
+            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FirstNameTextBox.Name = "FirstNameTextBox";
+            this.FirstNameTextBox.Size = new System.Drawing.Size(201, 31);
+            this.FirstNameTextBox.TabIndex = 8;
             // 
             // RaceLabel
             // 
             this.RaceLabel.AutoSize = true;
             this.RaceLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RaceLabel.Location = new System.Drawing.Point(168, 127);
+            this.RaceLabel.Location = new System.Drawing.Point(224, 156);
+            this.RaceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RaceLabel.Name = "RaceLabel";
-            this.RaceLabel.Size = new System.Drawing.Size(46, 18);
+            this.RaceLabel.Size = new System.Drawing.Size(56, 23);
             this.RaceLabel.TabIndex = 13;
             this.RaceLabel.Text = "Race";
             // 
-            // textBox2
+            // RaceTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(168, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 26);
-            this.textBox2.TabIndex = 12;
+            this.RaceTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceTextBox.Location = new System.Drawing.Point(224, 182);
+            this.RaceTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RaceTextBox.Name = "RaceTextBox";
+            this.RaceTextBox.Size = new System.Drawing.Size(201, 31);
+            this.RaceTextBox.TabIndex = 12;
             // 
             // FinalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(504, 481);
+            this.ClientSize = new System.Drawing.Size(672, 592);
             this.ControlBox = false;
             this.Controls.Add(this.RaceLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RaceTextBox);
             this.Controls.Add(this.LastNameLabel2);
             this.Controls.Add(this.LastNameTextBox);
             this.Controls.Add(this.FirstNameLabel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FirstNameTextBox);
             this.Controls.Add(this.AbilityGroupBox);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Form";
+            this.Load += new System.EventHandler(this.FinalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.AbilityGroupBox.ResumeLayout(false);
@@ -389,8 +414,8 @@
         private System.Windows.Forms.Label LastNameLabel2;
         private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.Label FirstNameLabel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FirstNameTextBox;
         private System.Windows.Forms.Label RaceLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RaceTextBox;
     }
 }

@@ -102,6 +102,12 @@
     <Compile Include="RaceAndClassForm.Designer.cs">
       <DependentUpon>RaceAndClassForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AbilityGeneratorForm.resx">
       <DependentUpon>AbilityGeneratorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,7 +133,9 @@
     <EmbeddedResource Include="RaceAndClassForm.resx">
       <DependentUpon>RaceAndClassForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram.cd" />
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
