@@ -21,6 +21,8 @@ namespace COMP123_M2020_FinalExam
 
         public string Race { get; set; }
 
+
+        //added these 2 properties with get and set
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

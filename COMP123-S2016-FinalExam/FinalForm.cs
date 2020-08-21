@@ -41,6 +41,7 @@ namespace COMP123_M2020_FinalExam
 
         private void FinalForm_Load(object sender, EventArgs e)
         {
+            // adding values to the textboxes by getting values from the corresponding properties in character.cs
             StrengthTextBox.Text = Program.character.Strength;
             DexterityTextBox.Text = Program.character.Dexterity;
             ConstitutionTextBox.Text = Program.character.Constitution;
